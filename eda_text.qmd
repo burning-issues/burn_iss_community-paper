@@ -1,0 +1,37 @@
+---
+title: "Exploratory Text-Data Analysis"
+---
+
+```{r setup, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# A Text analysis with [Tidytext](https://www.tidytextmining.com/index.html)
+
+This is an exploratory data analysis (flesh out later)
+
+```{r echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(tidytext)
+library(tidyverse)
+library(widyr)
+library(igraph)
+library(ggraph)
+library(wordcloud)
+library(reshape2)
+library(graphlayouts)
+library(pluralize)
+library(quanteda)
+library(spacyr)
+library(reticulate)
+
+#Function to adjust table width:
+  
+html_table_width <- function(kable_output, width){
+  width_html <- paste0(paste0('<col width="', width, '">'), collapse = "\n")
+  sub("<table>", paste0("<table>\n", width_html), kable_output)
+}  
+
+# Source: https://github.com/rstudio/bookdown/issues/122
+```
+

@@ -9,8 +9,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "watershed-fires-comm",
+    "title": "Burning Questions: The Role of Wildfires in Watershed Functioning",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Welcome!\nThis site is an invitation to collaborate in “Shaping the future of wildfire science”.\nWith your help we want to identify top priorities and unanswered questions on the cascading impacts of fires in watersheds.\nMore specifically, our objective is to identify, assess, and collate currently unanswered research questions on the ecosystem biogeochemical impacts of wildfires.\nWe will synthesize emergent themes and identify key research priorities in this field. We seek to do this from a community perspective and solicit researchers to share their viewpoints.\n\n\nOur initial survey\nWe have got responses from more than 60 wildfire scientists to the following questions:\n\nIn your opinion, which are 2 of the most pressing questions that need to be addressed to further our understanding of wildfire impacts on biogeochemical cycling in watersheds.\nWhat are the most important pathways towards better integrating fire science across scientific disciplines?\nWhat are the key roadblocks towards a more holistic understanding of the cumulative spatiotemporal impacts of wildfires in terrestrial and aquatic environments across both short and long timescales?"
+  },
+  {
+    "objectID": "eda_text.html",
+    "href": "eda_text.html",
+    "title": "Exploratory Text-Data Analysis",
+    "section": "",
+    "text": "This is an exploratory data analysis (flesh out later)"
   }
 ]
