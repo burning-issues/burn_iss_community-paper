@@ -122,8 +122,6 @@ td_f = pd.read_csv("wildfires_watersheds_vault/TOOLS/Assets/Data/wildfires-surve
 td_f.head()
 ```
 
-
-
 ***Raw Data***
 
 ```{r echo=FALSE}
