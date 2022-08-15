@@ -115,12 +115,6 @@ From [Stack overflow](https://stackoverflow.com/questions/55772761/is-there-a-be
 
 Yet, there are a few steps required for this to work, as detailed in [Running Python Chunks in RStudio and rmarkdown](). After that you could also watch this [YouTube Tutorial](https://www.youtube.com/watch?v=gn8oJ8FMSWY&ab_channel=RenzoCaceresRossi).
 
-```{python}
-import spacy as sp
-import pandas as pd
-td_f = pd.read_csv("wildfires_watersheds_vault/TOOLS/Assets/Data/wildfires-survey-answers.csv")
-td_f.head()
-```
 
 ***Raw Data***
 
