@@ -22,8 +22,8 @@ library(reshape2)
 library(graphlayouts)
 library(pluralize)
 library(quanteda)
-library(spacyr)
-library(reticulate)
+# library(spacyr)
+# library(reticulate)
 
 #Function to adjust table width:
   
