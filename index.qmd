@@ -2,7 +2,7 @@
 title: "Burning Questions: The Role of Wildfires in Watershed Functioning"
 ---
 
-![](docs/assets/wildfires.png){fig-alt="Intense fire consuming trees in a forest" fig-align="center"}
+![](https://raw.githubusercontent.com/burning-issues/comm-assets/main/wildfires.png){fig-alt="Intense fire consuming trees in a forest" fig-align="center"}
 
 # Welcome!
 
