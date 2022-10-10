@@ -49,11 +49,13 @@ The datafile is organized in long format with three columns for the variables: U
 
 
 ```{r echo=FALSE}
-t_df <- read.csv("wildfires_watersheds_vault/TOOLS/Assets/Data/wildfires-survey-answers.csv")
+setwd("C:/Users/guer310/OneDrive - PNNL/Documents/GitHub/community-paper/wildfires_watersheds_vault")
+t_df <- read.csv("TOOLS/Assets/Data/wildfires-survey-answers.csv")
 t_df1 <- as.data.frame(rbind(t_df[c(1:3),],t_df[c(68:71),], row.names = FALSE))
 colnames(t_df1) <- c("ID", "Question type", "Answers")
 knitr::kable(head(t_df1),format="html")%>% 
    html_table_width(c(100,100,100))
+setwd("C:/Users/guer310/OneDrive - PNNL/Documents/GitHub/community-paper/wildfires_watersheds_rdocs")
 ```
 
 ## Tokenization
