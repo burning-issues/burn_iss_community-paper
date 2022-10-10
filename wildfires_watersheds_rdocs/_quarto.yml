@@ -15,8 +15,6 @@ website:
       - href: about.qmd
         text: Community
 
-
-
 format:
   html:
     theme: 
