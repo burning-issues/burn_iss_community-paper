@@ -282,6 +282,7 @@ pq_digrams %>%
 ```{r}
 library(igraph)
 library(graphlayouts)
+library(qgraph)
 
 bigram_graph <- pq_digrams %>%
   filter(rank < 101) %>%
@@ -301,9 +302,15 @@ set.seed(2017)
 #   geom_node_text(aes(label = name), vjust = 1, hjust = 1)+
 #   theme_void()
 # V(bigram_graph)$size <- V(bigram_graph)$t_freq*10
+l <- layout_with_fr(bigram_graph)
+e <- get.edgelist(bigram_graph,names=FALSE)
+m <- qgraph.layout.fruchtermanreingold(e,vcount=vcount(bigram_graph))
 deg <- degree(bigram_graph,mode="all")
-plot(bigram_graph, rescale= FALSE, ylim = c(-7,7),xlim = c(1,-5),asp=0, edge.arrow.size=.8,vertex.color = "pink", vertex.size =deg*10,vertex.frame.color="deeppink",vertex.label.color="black", vertex.label.cex=0.75,vertex.label.dist=0.8,edge.curve = 0.75,edge.color="skyblue",edge.label.family="Arial")
+fsize <- degree(bigram_graph, mode= "all")
 
+plot(bigram_graph,layout=m, edge.arrow.size =.05,vertex.color = "pink", vertex.size =500,vertex.frame.color="deeppink",vertex.label.color="black", vertex.label.cex=fsize/5,vertex.label.dist=0.8,edge.curve = 0.75,edge.color="skyblue",edge.label.family="Arial", rescale=F, axes = FALSE, ylim = c(-50,90), xlim = c(-55,120), asp =0)
+
+plot(bigram_graph,layout=m, edge.arrow.size =.05,vertex.color = "pink", vertex.size =deg*150,vertex.frame.color="deeppink",vertex.label.color="black", vertex.label.cex=0.55,vertex.label.dist=0.8,edge.curve = 0.75,edge.color="skyblue",edge.label.family="Arial", rescale=F, axes = FALSE, ylim = c(-50,90), xlim = c(-55,120), asp =0)
 ```
 
 Editing network graphs: [GitHub-Issue](https://github.com/thomasp85/ggraph/issues/169) 
