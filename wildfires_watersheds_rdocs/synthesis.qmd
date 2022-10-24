@@ -1,4 +1,0 @@
----
-title: "Synthesis"
-editor: visual
----
